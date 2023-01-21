@@ -10,6 +10,7 @@ const App = () => {
       <div className='app-wrapper'>
           <Header/>
           <Navigation/>
+
           <Main/>
       </div>
   );
