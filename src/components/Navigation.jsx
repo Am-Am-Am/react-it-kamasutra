@@ -1,6 +1,8 @@
+import s from './Navigation.module.css';
+
 const Navigation = () => {
     return(
-        <nav className='nav'>
+        <nav className={s.nav}>
             <div><a href="#">pro</a></div>
             <div><a href="#">mes</a></div>
             <div><a href="#">news</a></div>

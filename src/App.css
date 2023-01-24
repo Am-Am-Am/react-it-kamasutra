@@ -7,28 +7,5 @@
   grid-gap: 10px;
 }
 
-.header{
-  grid-area: h;
-  background-color: bisque;
-}
 
-.nav{
-  grid-area: n;
-  background-color: brown;
-}
 
-.nav a{
-
-  text-decoration: none;
-  color: black;
-}
-
-.content{
-  grid-area: m;
-  background-color: darkgray;
-}
-
-.header img{
-  width: 30px;
-
-}

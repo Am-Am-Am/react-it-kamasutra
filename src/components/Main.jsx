@@ -1,6 +1,8 @@
+import s from './Main.module.css';
+
 const Main = () => {
     return(
-        <main className='content'>
+        <main className={s.content}>
             <div className="profile">
                 <div className="ava">
                     <img src="https://www.shutterstock.com/image-vector/circle-line-simple-design-logo-260nw-2174926871.jpg" alt=""/>
