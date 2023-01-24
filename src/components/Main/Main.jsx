@@ -1,4 +1,5 @@
 import s from './Main.module.css';
+import MyPosts from "./MyPosts/MyPosts";
 
 const Main = () => {
     return(
@@ -9,9 +10,7 @@ const Main = () => {
                 </div>
                 <div className="description">описание</div>
             </div>
-            <div className="post">
-                пост
-            </div>
+            <MyPosts/>
         </main>
     )
 }
