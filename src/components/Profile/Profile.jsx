@@ -1,17 +1,16 @@
 import s from './Profile.module.css';
 import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
+
 
 const Profile = () => {
     return(
-        <main className={s.content}>
-            <div className="profile">
-                <div className="ava">
-                    <img src="https://www.shutterstock.com/image-vector/circle-line-simple-design-logo-260nw-2174926871.jpg" alt=""/>
-                </div>
-                <div className="description">описание</div>
-            </div>
-            <MyPosts/>
-        </main>
+       <div>
+           <ProfileInfo href='https://htstatic.imgsmail.ru/pic_original/dbf57de482b4d0fc1a2bb920b198e398/2328376/' description='Описание '/>
+       </div>
+
+
+
     )
 }
 
