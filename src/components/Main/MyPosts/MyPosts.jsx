@@ -5,6 +5,10 @@ const MyPosts = () => {
     return(
        <div>
            <div className={s.posts}></div>
+           <Post message = "мама"/>
+           <Post message = "жаркая"/>
+           <Post/>
+           <Post/>
            <Post/>
            <Post/>
        </div>
