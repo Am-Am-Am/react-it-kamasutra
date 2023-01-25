@@ -1,7 +1,7 @@
-import s from './Main.module.css';
+import s from './Profile.module.css';
 import MyPosts from "./MyPosts/MyPosts";
 
-const Main = () => {
+const Profile = () => {
     return(
         <main className={s.content}>
             <div className="profile">
@@ -15,4 +15,4 @@ const Main = () => {
     )
 }
 
-export default Main;
+export default Profile;

@@ -3,10 +3,10 @@ import s from './Navigation.module.css';
 const Navigation = () => {
     return(
         <nav className={s.nav}>
-            <div><a href="src/components/Navigation/Navigation#">pro</a></div>
-            <div><a href="src/components/Navigation/Navigation#">mes</a></div>
-            <div><a href="src/components/Navigation/Navigation#">news</a></div>
-            <div><a href="src/components/Navigation/Navigation#">music</a></div>
+            <div><a href="/profile">profile</a></div>
+            <div><a href="/dialogs">dialogs</a></div>
+            <div><a href="/news">news</a></div>
+            <div><a href="/music">music</a></div>
         </nav>
     )
 }
