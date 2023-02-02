@@ -1,7 +1,5 @@
 import s from './ProfileInfo.module.css';
 
-
-
 const ProfileInfo = (props) => {
     return(
         <div className="profile">
