@@ -9,21 +9,21 @@ import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 
 
-const App = () => {
-    let postsData = [{message: 'где нас нет?', id: '0',likesCount: 0}, {message: 'я мечтаю!', id: '1',likesCount: 0}]
-    let dataDialogs = [{name: 'Oxxxymiron', id: '0'}, {name: 'KPss', id: '1'}]
-    let messagesData = [{message: 'где нас нет', id: '0'}, {message: 'я мечтаю', id: '1'}]
+const App = (props) => {
+    // let postsData = [{message: 'где нас нет?', id: '0',likesCount: 0}, {message: 'я мечтаю!', id: '1',likesCount: 0}]
+    // let dataDialogs = [{name: 'Oxxxymiron', id: '0'}, {name: 'KPss', id: '1'}]
+    // let messagesData = [{message: 'где нас нет', id: '0'}, {message: 'я мечтаю', id: '1'}]
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
                 <Header/>
                 <Navigation/>
-                75
+
 
                 <div className="content">
                     <Routes>
-                        <Route path='/messages' element={<Messages dataDialogs = {dataDialogs} messagesData = {messagesData}/>}/>
-                        <Route path='/profile' element={<Profile postsData = {postsData}/>}/>
+                        <Route path='/messages' element={<Messages data = {props.state.messagesPage}/>}/>
+                        <Route path='/profile' element={<Profile data = {props.state.profilePage}/>}/>
                         <Route path='/news' element={<News/>}/>
                         <Route path='/music' element={<Music/>}/>
                         <Route path='/settings' element={<Settings/>}/>

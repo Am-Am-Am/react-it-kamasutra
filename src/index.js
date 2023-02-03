@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import state from "./redux/state";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// let postsData = [{message: 'где нас нет?', id: '0',likesCount: 0}, {message: 'я мечтаю!', id: '1',likesCount: 0}]
+// let dataDialogs = [{name: 'Oxxxymiron', id: '0'}, {name: 'KPss', id: '1'}]
+// let messagesData = [{message: 'где нас нет', id: '0'}, {message: 'я мечтаю', id: '1'}]
+
 root.render(
   <React.StrictMode>
-    <App />
+    <App state = {state}/>
   </React.StrictMode>
 );
 
