@@ -10,9 +10,6 @@ import Settings from "./components/Settings/Settings";
 
 
 const App = (props) => {
-    // let postsData = [{message: 'где нас нет?', id: '0',likesCount: 0}, {message: 'я мечтаю!', id: '1',likesCount: 0}]
-    // let dataDialogs = [{name: 'Oxxxymiron', id: '0'}, {name: 'KPss', id: '1'}]
-    // let messagesData = [{message: 'где нас нет', id: '0'}, {message: 'я мечтаю', id: '1'}]
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
@@ -23,7 +20,7 @@ const App = (props) => {
                 <div className="content">
                     <Routes>
                         <Route path='/messages' element={<Messages data = {props.state.messagesPage}/>}/>
-                        <Route path='/profile' element={<Profile data = {props.state.profilePage}/>}/>
+                        <Route path='/profile' element={<Profile data = {props.state.profilePage} addPost = {props.addPost}/>}/>
                         <Route path='/news' element={<News/>}/>
                         <Route path='/music' element={<Music/>}/>
                         <Route path='/settings' element={<Settings/>}/>
