@@ -1,4 +1,6 @@
-import {rerenderEntireTree} from "../render";
+let rerenderEntireTree = () => {
+    console.log("State changed")
+}
 
 let state = {
     profilePage:{
@@ -9,6 +11,10 @@ let state = {
         messages: [{message: 'где нас нет', id: 0}, {message: 'я мечтаю', id: 1}],
         dialogs: [{name: 'Oxxxymiron', id: 0}, {name: 'KPss', id: 1}]
     }
+}
+
+export const subscribe = (observer) =>{
+    rerenderEntireTree = observer;//наблюдатель
 }
 
 export let addPost = (postMessage) => {
